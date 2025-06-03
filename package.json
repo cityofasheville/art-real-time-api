@@ -1,0 +1,22 @@
+{
+  "name": "art-real-time-api",
+  "version": "1.0.0",
+  "description": "Retrieves real-time trip updates and vehicle positions from the Swiftly API",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env src/local.js",
+    "startpy": "python3 src/local.py",
+    "clean": "rm -rf deploy/build && rm -rf node_modules/",
+    "deploy": "cd deploy && node deploy.js",
+    "destroy": "cd deploy && node destroy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cityofasheville/art-real-time-api.git"
+  },
+  "author": "Al Letizia",
+  "license": "ISC",
+  "devDependencies": {
+    "yaml": "^2.4.2"
+  }
+}
