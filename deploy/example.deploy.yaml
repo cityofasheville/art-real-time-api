@@ -1,6 +1,6 @@
 # Required Fields
 
-lambda_name: art-real-time-api   # Name of the production lambda. GitHub branch name will be added as a suffix for dev and feature branches
+lambda_name: art-realtime-api   # Name of the production lambda. GitHub branch name will be added as a suffix for dev and feature branches
 description: 'Retrieves real-time trip updates and vehicle positions from the Swiftly API'
 region: us-east-1                # AWS region
 state_bucket: avl-tfstate-store  # S3 bucket to store terraform state
