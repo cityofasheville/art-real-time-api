@@ -1,7 +1,7 @@
 
 import {handler} from './index.js';
 
-let event = {rawPath: '/vehiclepositions'};
+let event = {rawPath: '/alerts'};
 
 handler(event).then(() => {
     console.log('done');

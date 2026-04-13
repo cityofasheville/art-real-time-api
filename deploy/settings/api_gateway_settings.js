@@ -14,7 +14,7 @@ resource "aws_apigatewayv2_api" "${config.prog_name}" {
   cors_configuration {
     allow_headers     = ["*"]
     allow_methods     = ["POST", "GET"]
-    allow_origins     = ${JSON.stringify(config.api_gateway_settings.cors)}
+    allow_origins     = ["*"]
     expose_headers    = ["*"]
     max_age           = 300
   }

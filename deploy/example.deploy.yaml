@@ -1,13 +1,13 @@
 # Required Fields
 
-lambda_name: art-realtime-api   # Name of the production lambda. GitHub branch name will be added as a suffix for dev and feature branches
-description: 'Retrieves real-time trip updates and vehicle positions from the Swiftly API'
+lambda_name: template           # Name of the production lambda. GitHub branch name will be added as a suffix for dev and feature branches
+description: 'Description for Lambda function'
 region: us-east-1                # AWS region
 state_bucket: avl-tfstate-store  # S3 bucket to store terraform state
 nodejs_or_python: nodejs         # set to nodejs or python
 lambda_options:                  # Enable access to AWS features. Must be 'true' or 'false'
-  vpc: 'true'
-  api_gateway: 'true'
+  vpc: 'false'
+  api_gateway: 'false'
   lambda_url: 'false'
   secrets_manager: 'false'
   invoke_lambda: 'false'
@@ -33,6 +33,5 @@ api_gateway_settings:
   development_domain_name: template.ashevillenc.gov # No need to include "dev" in the name. GitHub branch name will be added as a prefix for dev and feature branches
   production_certificate_arn: arn:aws:acm:us-east-1:xx:certificate/xxx
   development_certificate_arn: arn:aws:acm:us-east-1:xx:certificate/xyz
-  cors:
-    - "*"
+
 
